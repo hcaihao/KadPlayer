@@ -1,0 +1,214 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.40219.01 (8dad416a).
+//
+// z:\vc project\kadplayer\project\kadplayer\release\thunderagent.tli
+//
+// Wrapper implementations for Win32 type library ThunderAgent.dll
+// compiler-generated file created 04/10/14 at 11:11:59 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IAgent wrapper method implementations
+//
+
+inline _bstr_t IAgent::GetInfo ( _bstr_t bstrInfoName ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetInfo(bstrInfoName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IAgent::AddTask ( _bstr_t bstrUrl, _bstr_t bstrFileName, _bstr_t bstrPath, _bstr_t bstrComments, _bstr_t bstrReferUrl, int nStartMode, int nOnlyFromOrigin, int nOriginThreadCount ) {
+    HRESULT _hr = raw_AddTask(bstrUrl, bstrFileName, bstrPath, bstrComments, bstrReferUrl, nStartMode, nOnlyFromOrigin, nOriginThreadCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline int IAgent::CommitTasks ( ) {
+    int _result = 0;
+    HRESULT _hr = raw_CommitTasks(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAgent::CancelTasks ( ) {
+    HRESULT _hr = raw_CancelTasks();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t IAgent::GetTaskInfo ( _bstr_t bstrUrl, _bstr_t bstrInfoName ) {
+    BSTR _result = 0;
+    HRESULT _hr = raw_GetTaskInfo(bstrUrl, bstrInfoName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT IAgent::GetInfoStruct ( int pInfo ) {
+    HRESULT _hr = raw_GetInfoStruct(pInfo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IAgent::GetTaskInfoStruct ( int pTaskInfo ) {
+    HRESULT _hr = raw_GetTaskInfoStruct(pTaskInfo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAgent2 wrapper method implementations
+//
+
+inline HRESULT IAgent2::AddTask2 ( _bstr_t bstrUrl, _bstr_t bstrFileName, _bstr_t bstrPath, _bstr_t bstrComments, _bstr_t bstrReferUrl, int nStartMode, int nOnlyFromOrigin, int nOriginThreadCount, _bstr_t bstrCookie ) {
+    HRESULT _hr = raw_AddTask2(bstrUrl, bstrFileName, bstrPath, bstrComments, bstrReferUrl, nStartMode, nOnlyFromOrigin, nOriginThreadCount, bstrCookie);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline int IAgent2::CommitTasks2 ( int nIsAsync ) {
+    int _result = 0;
+    HRESULT _hr = raw_CommitTasks2(nIsAsync, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAgent3 wrapper method implementations
+//
+
+inline HRESULT IAgent3::AddTask3 ( _bstr_t bstrUrl, _bstr_t bstrFileName, _bstr_t bstrPath, _bstr_t bstrComments, _bstr_t bstrReferUrl, int nStartMode, int nOnlyFromOrigin, int nOriginThreadCount, _bstr_t bstrCookie, _bstr_t bstrCID ) {
+    HRESULT _hr = raw_AddTask3(bstrUrl, bstrFileName, bstrPath, bstrComments, bstrReferUrl, nStartMode, nOnlyFromOrigin, nOriginThreadCount, bstrCookie, bstrCID);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAgent4 wrapper method implementations
+//
+
+inline HRESULT IAgent4::AddTask4 ( _bstr_t bstrUrl, _bstr_t bstrFileName, _bstr_t bstrPath, _bstr_t bstrComments, _bstr_t bstrReferUrl, int nStartMode, int nOnlyFromOrigin, int nOriginThreadCount, _bstr_t bstrCookie, _bstr_t bstrCID, _bstr_t bstrStatUrl ) {
+    HRESULT _hr = raw_AddTask4(bstrUrl, bstrFileName, bstrPath, bstrComments, bstrReferUrl, nStartMode, nOnlyFromOrigin, nOriginThreadCount, bstrCookie, bstrCID, bstrStatUrl);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAgent5 wrapper method implementations
+//
+
+inline HRESULT IAgent5::AddTask5 ( _bstr_t bstrUrl, _bstr_t bstrFileName, _bstr_t bstrPath, _bstr_t bstrComments, _bstr_t bstrReferUrl, int nStartMode, int nOnlyFromOrigin, int nOriginThreadCount, _bstr_t bstrCookie, _bstr_t bstrCID, _bstr_t bstrStatUrl, enum _tag_Enum_CallType eCallType, _bstr_t bstrGCID, int nFileSize ) {
+    HRESULT _hr = raw_AddTask5(bstrUrl, bstrFileName, bstrPath, bstrComments, bstrReferUrl, nStartMode, nOnlyFromOrigin, nOriginThreadCount, bstrCookie, bstrCID, bstrStatUrl, eCallType, bstrGCID, nFileSize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline int IAgent5::CommitTasks3 ( int nThunderType, int nIsAsync ) {
+    int _result = 0;
+    HRESULT _hr = raw_CommitTasks3(nThunderType, nIsAsync, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAgent6 wrapper method implementations
+//
+
+inline int IAgent6::ConfirmRectMode ( ) {
+    int _result = 0;
+    HRESULT _hr = raw_ConfirmRectMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAgent6::AddTaskInRect ( ) {
+    HRESULT _hr = raw_AddTaskInRect();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAgent7 wrapper method implementations
+//
+
+inline int IAgent7::CommitTasks4 ( int nThunderType, int nIsAsync ) {
+    int _result = 0;
+    HRESULT _hr = raw_CommitTasks4(nThunderType, nIsAsync, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAgentExternal wrapper method implementations
+//
+
+inline int IAgentExternal::ExecuteCommand ( _bstr_t bstrType, _bstr_t bstrCommand, _bstr_t bstrParam ) {
+    int _result = 0;
+    HRESULT _hr = raw_ExecuteCommand(bstrType, bstrCommand, bstrParam, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAgent8 wrapper method implementations
+//
+
+inline HRESULT IAgent8::AddTask8 ( _bstr_t bstrUrl, _bstr_t bstrFileName, _bstr_t bstrPath, _bstr_t bstrComments, _bstr_t bstrReferUrl, int nStartMode, int nOnlyFromOrigin, int nOriginThreadCount, _bstr_t bstrCookie, _bstr_t bstrCID, _bstr_t bstrStatUrl, int nSocket, unsigned __int64 ulBeginAddressOfRecvData, int nRecvBytes, unsigned int unTaskOpt ) {
+    HRESULT _hr = raw_AddTask8(bstrUrl, bstrFileName, bstrPath, bstrComments, bstrReferUrl, nStartMode, nOnlyFromOrigin, nOriginThreadCount, bstrCookie, bstrCID, bstrStatUrl, nSocket, ulBeginAddressOfRecvData, nRecvBytes, unTaskOpt);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAgent9 wrapper method implementations
+//
+
+inline int IAgent9::CommitTasks5 ( int nThunderType, int nIsAsync ) {
+    int _result = 0;
+    HRESULT _hr = raw_CommitTasks5(nThunderType, nIsAsync, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IAgent9::AddTaskInRect2 ( ) {
+    HRESULT _hr = raw_AddTaskInRect2();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAgent10 wrapper method implementations
+//
+
+inline HRESULT IAgent10::AddTask10 ( _bstr_t bstrUrl, _bstr_t bstrRedirectedUrl, _bstr_t bstrTitle, _bstr_t bstrPath, _bstr_t bstrComments, _bstr_t bstrReferUrl, _bstr_t bstrCookie, _bstr_t bstrUserAgent, _bstr_t bstrExtraInfo ) {
+    HRESULT _hr = raw_AddTask10(bstrUrl, bstrRedirectedUrl, bstrTitle, bstrPath, bstrComments, bstrReferUrl, bstrCookie, bstrUserAgent, bstrExtraInfo);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline int IAgent10::CommitTasks10 ( int nThunderType, int nIsAsync ) {
+    int _result = 0;
+    HRESULT _hr = raw_CommitTasks10(nThunderType, nIsAsync, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IAgent11 wrapper method implementations
+//
+
+inline HRESULT IAgent11::AddTask11 ( _bstr_t bstrUrl, _bstr_t bstrFileName, _bstr_t bstrPath, _bstr_t bstrComments, _bstr_t bstrReferUrl, _bstr_t bstrCharSet, int nStartMode, int nOnlyFromOrigin, int nOriginThreadCount, _bstr_t bstrCookie, _bstr_t bstrCID, _bstr_t bstrStatUrl, int nSocket, unsigned __int64 ulBeginAddressOfRecvData, int nRecvBytes, unsigned int unTaskOpt, _bstr_t bstrStatClick ) {
+    HRESULT _hr = raw_AddTask11(bstrUrl, bstrFileName, bstrPath, bstrComments, bstrReferUrl, bstrCharSet, nStartMode, nOnlyFromOrigin, nOriginThreadCount, bstrCookie, bstrCID, bstrStatUrl, nSocket, ulBeginAddressOfRecvData, nRecvBytes, unTaskOpt, bstrStatClick);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IAgent12 wrapper method implementations
+//
+
+inline HRESULT IAgent12::AddTask12 ( _bstr_t bstrUrl, _bstr_t bstrFileName, _bstr_t bstrPath, _bstr_t bstrComments, _bstr_t bstrReferUrl, _bstr_t bstrCharSet, int nStartMode, int nOnlyFromOrigin, int nOriginThreadCount, _bstr_t bstrCookie, _bstr_t bstrCID, _bstr_t bstrStatUrl, unsigned int unTaskOpt, _bstr_t bstrStatClick ) {
+    HRESULT _hr = raw_AddTask12(bstrUrl, bstrFileName, bstrPath, bstrComments, bstrReferUrl, bstrCharSet, nStartMode, nOnlyFromOrigin, nOriginThreadCount, bstrCookie, bstrCID, bstrStatUrl, unTaskOpt, bstrStatClick);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

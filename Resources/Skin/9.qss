@@ -1,0 +1,74 @@
+/* 界面按钮 */
+
+#searchPushButton, #randomPushButton
+{
+	border:1px solid #167789;
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #3097aa, stop:1 #22899c);
+}
+
+#searchPushButton:hover, #randomPushButton:hover
+{
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #47b5c9, stop:1 #30a0b5);
+}
+
+#searchPushButton:pressed, #randomPushButton:pressed
+{
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #228395, stop:1 #167789);
+}
+
+#searchPushButton:checked, #randomPushButton:checked
+{
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #228395, stop:1 #167789);
+}
+
+#messageLabel
+{
+	color:#000000;
+}
+
+#playListTreeWidget::item:hover
+{
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #47b5c9, stop:1 #30a0b5);
+}
+
+#playListTreeWidget::item:selected
+{
+	background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #228395, stop:1 #167789);
+}
+
+/* 系统控件 */
+
+QLabel
+{
+	color:#FFFFFF;
+}
+
+QPushButton#okButton
+{
+	background:#3097aa;
+}
+
+QPushButton#okButton:hover
+{
+	background:#47b5c9;
+}
+
+QPushButton#cancelButton
+{
+	background:#3097aa;
+}
+
+QPushButton#cancelButton:hover
+{
+	background:#47b5c9;
+}
+
+QGroupBox::title
+{
+	color:#3097aa;
+}
+
+QTabBar
+{
+	color:#3097aa;
+}
