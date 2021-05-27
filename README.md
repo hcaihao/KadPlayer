@@ -3,6 +3,6 @@
 
 
 # 功能演示
-![image](https://github.com/hcaihao/KadPlayer/blob/master/Demo1.png)
-
 ![image](https://github.com/hcaihao/KadPlayer/blob/master/Demo2.png)
+
+![image](https://github.com/hcaihao/KadPlayer/blob/master/Demo1.png)
